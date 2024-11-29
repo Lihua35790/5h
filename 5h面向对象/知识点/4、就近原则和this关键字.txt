@@ -1,0 +1,13 @@
+一、成员变量和局部变量
+①在方法内部的是局部变量，②方法的外面类的里面称作成员变量
+
+成员变量与局部变量相同时：就近原则，谁离我近，我就用谁
+变量名相同，想使用成员变量是可以直接使用this，这样就不会使用方法内的局部变量了。
+如：
+public class GirlFriend{
+    private int age;
+    public void methid(){
+        int age = 10;
+        System.out.println(this.age);   //成员变量名与局部变量名相同，这是就会采用就近原则。如果想用成员变量中的age就直接使用this关键字调用
+    }
+}
